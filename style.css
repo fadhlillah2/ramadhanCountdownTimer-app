@@ -41,3 +41,10 @@ h1 {
 .countdown-el span {
     font-size: 1.5rem;
 }
+
+/* Narrow screens: shrink the digits and let the row wrap so it never overflows. */
+@media (max-width: 500px) {
+    .countdown-container { flex-wrap: wrap; justify-content: center; }
+    .big-text { font-size: 3rem; margin: 0 1rem; }
+    h1 { margin-top: -6rem; text-align: center; }
+}
